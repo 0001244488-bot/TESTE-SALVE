@@ -31,9 +31,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             btnMensagem = new Button();
             lblTitulo = new Label();
+            maskedTextBox1 = new MaskedTextBox();
             SuspendLayout();
             // 
             // btnMensagem
@@ -52,23 +52,35 @@
             lblTitulo.Font = new Font("Segoe UI", 18F);
             lblTitulo.Location = new Point(267, 155);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(266, 32);
+            lblTitulo.Size = new Size(273, 32);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Bem-vindo ao aplicativo";
             // 
+            // maskedTextBox1
+            // 
+            maskedTextBox1.Location = new Point(125, 252);
+            maskedTextBox1.Name = "maskedTextBox1";
+            maskedTextBox1.Size = new Size(100, 23);
+            maskedTextBox1.TabIndex = 2;
+            // 
             // Form1
             // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(maskedTextBox1);
             Controls.Add(btnMensagem);
             Controls.Add(lblTitulo);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Tela inicial";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
+
+        private MaskedTextBox maskedTextBox1;
     }
 }

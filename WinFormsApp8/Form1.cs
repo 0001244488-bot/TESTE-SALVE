@@ -11,5 +11,10 @@ namespace WinFormsApp8
         {
             MessageBox.Show("Olá! Seja bem-vindo ao aplicativo.", "Mensagem");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
